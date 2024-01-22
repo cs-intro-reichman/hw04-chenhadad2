@@ -37,6 +37,12 @@ public class StringOps {
         String newStr = ""; // init a new str
         for(int i=0; i<s.length();i++) { // runs on all chars of the string
             if ((s.charAt(i) >= 65) && (s.charAt(i) <= 90)) { // checks if char is UPPERCASE letter
+                // TODO: you can work with chars in Java like with integers:
+                //    char newChar = s.charAt(i);
+                //    newChar = newChar +32;
+                //  OR just
+                //    char newChar = s.charAt(i) + 32;
+                
                 int temp = s.charAt(i) + 32; // checks lowercase ASCII code
                 newStr += (char) temp; // writes lowercase letter instead
             } else newStr += s.charAt(i);
@@ -46,7 +52,7 @@ public class StringOps {
 
     public static String capVowelsLowRest (String string) {
         String Str = lowerCase(string);
-       String newStr = "";
+       String newStr = ""; // TODO: broken indentations!
 
         for (int i = 0; i < string.length(); i++ ) {
             char newChar = Str.charAt(i);
@@ -55,10 +61,11 @@ public class StringOps {
                 
             }
               
-                        newStr = newStr+ newChar;
+                        newStr = newStr+ newChar;  // TODO: broken indentations! and no space before '+'
+
             }
         
-        return newStr;
+        return newStr;  // TODO: broken indentations!
         }
 
     public static String camelCase (String string) {
@@ -104,7 +111,7 @@ public class StringOps {
             if (var2 == chr) {
                 count++;       
         }
-    }
+    } // TODO: proper indentations are very important for the code readability!
         int [] index = new int[count];
         int x = 0;
         for (int j = 0; j < string.length(); j++ ) {

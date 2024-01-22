@@ -21,7 +21,7 @@ public class ArrayOps {
     
         
     
-
+    // TODO: nice solution, but will not work correct for array [5,5,5] for example
     public static int secondMaxValue(int [] array) {
         int max = -999;
         for (int i = 0; i< array.length; i++) {
@@ -72,7 +72,7 @@ public class ArrayOps {
             if (array[i] > array[i+1]) {
                 up = false;
             }
-
+            // TODO: keep your code clean, remove the empty line
         }
         if(up == true){
             return true;
